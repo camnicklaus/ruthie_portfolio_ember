@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="page-wrap">
+  <div class="header">
+    <h1 class="logo">{{#link-to 'index'}}Ruthie Nicklaus{{/link-to}}</h1>
+    <ul class="navigation">
+      <li class="nav-item">{{#link-to 'portfolio'}}portfolio{{/link-to}}</li>
+      <li class="nav-item">{{#link-to 'sketchbook'}}sketchbook{{/link-to}}</li>
+      <li class="nav-item">{{#link-to 'about'}}about{{/link-to}}</li>
+      <li class="nav-item">{{#link-to 'contact'}}contact{{/link-to}}</li>
+    </ul>
+    <ul class="social-media-links">
+      <li><a href="https://www.facebook.com/ruthiesuniform" target="_blank"><img src="/assets/images/icons/facebook.svg"></a></li>
+      <li><a href="https://www.instagram.com/ruthiesuniform/" target="_blank"><img src="/assets/images/icons/instagram2.svg"></a></li>
+      <li><a href="https://www.pinterest.com/ruthiesuniform/" target="_blank"><img src="/assets/images/icons/pinterest2.svg"></a></li>
+      <li><a href="https://www.linkedin.com/in/ruthie-nicklaus-6191897/" target="_blank"><img src="/assets/images/icons/linkedin.svg"></a></li>
+      <li><small>icons designed by Freepik.com</small></li>
+    </ul>
+    
+  </div>
+  <div class="main-content">
+    {{outlet}}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.image-gallery {
+  height: 500px;
+  font-size: 0;
+  white-space: nowrap;
+  .img-link:first-of-type {//class given to ember link helper that is wrapping images
+    padding-left: 230px;
+  }
+  .gallery-image {
+    height: 100%;
+    // border: 1px solid blue;
+    display: inline-block;
+  }
+}

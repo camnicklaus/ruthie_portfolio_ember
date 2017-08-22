@@ -1,0 +1,9 @@
+<section class="sketchbook">
+
+  <div class="image-gallery">
+    {{#each model as |image|}}
+      <img class="gallery-image lazyload"src="{{image.url}}" alt="{{image.title}}" title="{{image.title}}">
+    {{/each}}
+  </div>
+
+</section>

@@ -1,0 +1,19 @@
+.about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 240px;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($lightBlack, 1);
+  color: rgba($silver, 1);
+  p {
+    display: block;
+  }
+}

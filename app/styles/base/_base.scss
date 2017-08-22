@@ -1,0 +1,20 @@
+body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: rgba($lightOffWhite, 1);
+  font-family: 'Special Elite', cursive;
+}
+
+.page-wrap {
+  height: 100vh;
+}
+
+.main-content {
+  
+  height: 100%; 
+}
+
+.header, .image-gallery {
+  // border: 1px solid blue;
+}
