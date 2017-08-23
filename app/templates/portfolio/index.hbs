@@ -1,0 +1,12 @@
+<section class="portfolio">
+  <div class="image-gallery">
+    {{#each model as |image|}}   
+      <div class="image-wrapper">
+        {{#link-to 'portfolio.show' image}}
+          <img class="gallery-image lazyload" src="{{image.url}}" alt="{{image.title}}" title="{{image.title}}" id="{{image.id}}">
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </div>
+</section>
+{{outlet}}
