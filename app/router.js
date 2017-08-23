@@ -10,9 +10,8 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('sketchbook');
-  this.route('portfolio', function() {
-    this.route('full-size', { path: '/:image_id' })
-  });
+  this.route('portfolio');
+  this.route('view-full-size', { path: '/:collection/:image_id' });
 });
 
 export default Router;

@@ -1,13 +1,24 @@
 .image-gallery {
-  height: 500px;
+  // height: 500px;
+  height: 100%;
   font-size: 0;
   white-space: nowrap;
-  .img-link:first-of-type {//class given to ember link helper that is wrapping images
+  // display: flex;
+  // align-items: center;
+  &:first-of-type {//class given to ember link helper that is wrapping images
     padding-left: 230px;
   }
-  .gallery-image {
+  .image-wrapper {
     height: 100%;
-    // border: 1px solid blue;
     display: inline-block;
+    background: linear-gradient(rgba($blue, 0.2), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($blue, 0.2));
+    .gallery-image {
+      height: 500px;
+      position: sticky;
+      top: calc(50% - 250px);
+      // border: 1px solid blue;
+      display: inline-block;
+    }
   }
+  
 }

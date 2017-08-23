@@ -2,11 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    let images = this.modelFor('portfolio');
+    let images = this.modelFor(params.collection);
     let image = images.findBy('id',  params.image_id)
     // debugger;
-    // console.log()
-    // return this.modelFor('portfolio');
     return image;
   }
 });
