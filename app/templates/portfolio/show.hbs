@@ -1,7 +1,11 @@
 {{!-- <div style="height:100%;width:100%;background:black;">hey hey</div> --}}
 
 <div class="show-wrapper">
+  {{link-to 'close' 'portfolio'}}
+  {{link-to 'prev' 'portfolio.show' model.prev}}
   <img class="full-size-image" src="{{model.url}}" alt="{{model.title}}" title="{{model.title}}" id="{{model.id}}">
+  {{link-to 'next' 'portfolio.show' model.next}}
+
 </div>
 
 {{outlet}}
