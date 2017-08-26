@@ -1,0 +1,8 @@
+<main class="show-wrapper">
+  {{link-to '' 'sketchbook.show' model.prev class='arrow left-arrow'}}
+  {{#link-to 'sketchbook' class="full-size-image-wrapper"}}
+  <img src={{model.url}} alt={{model.title}} title={{model.title}} id={{model.id}} data-photo-id={{image.id}}>
+  {{/link-to}}
+  {{link-to '' 'sketchbook.show' model.next class='arrow right-arrow'}}
+
+</main>

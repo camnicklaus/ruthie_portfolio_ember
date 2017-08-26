@@ -1,9 +1,9 @@
- <section class="portfolio" id="image-gallery-scroll">
+<section class="sketchbook" id="image-gallery-scroll">
  
   <div class="image-gallery">
       {{#each model as |image|}}   
         <div class="gallery-image-wrapper">
-          {{#link-to 'portfolio.show' image.id}}
+          {{#link-to 'sketchbook.show' image.id}}
             <img class="gallery-image lazyload" src="{{image.url}}" alt="{{image.title}}" title="{{image.title}}" id="{{image.id}}" data-photo-id="{{image.id}}">
           {{/link-to}}
         </div>

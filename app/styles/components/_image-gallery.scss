@@ -5,10 +5,10 @@
   & > :first-of-type {
     padding-left: 230px;
   }
-  .image-wrapper {
+  .gallery-image-wrapper {
     height: 100%;
     display: inline-block;
-    background: linear-gradient(rgba($blue, 0.2), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($blue, 0.2));
+    background: linear-gradient(rgba($silver, 0.3), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($silver, 0.3));
     .gallery-image {
       height: 500px;
       position: sticky;

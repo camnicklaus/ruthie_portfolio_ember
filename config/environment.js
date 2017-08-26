@@ -6,6 +6,10 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    // historySupportMiddleware: true,
+    // routerScroll: {
+    //   scrollElement: '#image-gallery-scroll'
+    // },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

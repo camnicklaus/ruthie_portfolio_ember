@@ -1,14 +1,29 @@
 .contact {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba($lightBlack, 1);
-  color: rgba($silver, 1);
+  height: 100vh;
+  overflow-x: auto;
+  .text-content-wrapper {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba($silver, 0.3), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($silver, 0.3));
+    // padding: 0 250px;
+    
+    // border: 1px solid blue;
+    .text-content {
+      height: 500px;
+      width: 100%;
+      // background: rgba($silver, 1);
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        text-align: center;
+        padding: 0 260px;
+      }
+    }
+  }
 }

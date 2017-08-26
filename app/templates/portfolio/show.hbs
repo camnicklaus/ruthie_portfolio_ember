@@ -1,11 +1,13 @@
 {{!-- <div style="height:100%;width:100%;background:black;">hey hey</div> --}}
 
-<div class="show-wrapper">
-  {{link-to 'close' 'portfolio'}}
-  {{link-to 'prev' 'portfolio.show' model.prev}}
-  <img class="full-size-image" src="{{model.url}}" alt="{{model.title}}" title="{{model.title}}" id="{{model.id}}">
-  {{link-to 'next' 'portfolio.show' model.next}}
+<main class="show-wrapper">
+  {{!-- {{link-to 'close' 'portfolio'}} --}}
+  {{link-to '' 'portfolio.show' model.prev class='arrow left-arrow'}}
+  {{#link-to 'portfolio' class="full-size-image-wrapper"}}
+  <img src={{model.url}} alt={{model.title}} title={{model.title}} id={{model.id}} data-photo-id={{image.id}}>
+  {{/link-to}}
+  {{link-to '' 'portfolio.show' model.next class='arrow right-arrow'}}
 
-</div>
+</main>
 
 {{outlet}}
