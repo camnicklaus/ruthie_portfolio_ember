@@ -2,6 +2,7 @@
   height: 100%;
   font-size: 0;
   white-space: nowrap;
+  overflow: auto;
   & > :first-of-type {
     padding-left: 230px;
   }
@@ -11,7 +12,7 @@
     background: linear-gradient(rgba($silver, 0.3), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($lightOffWhite, 1), rgba($silver, 0.3));
     .gallery-image {
       height: 500px;
-      position: sticky;
+      position: relative;
       top: calc(50% - 250px);
       // border: 1px solid blue;
       display: inline-block;

@@ -1,8 +1,29 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const autoprefixer = require('autoprefixer');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    postcssOptions: {
+      compile: {
+        enabled: false,
+      },
+      filter: {
+        enabled: true,
+        exclude: ['assets/vendor.css'],
+        plugins: [
+          {
+            module: autoprefixer,
+            options: {
+              browsers: ['last 3 versions']
+            }
+          }
+        ]
+      }
+    }
+    // sassOptions: {
+    //   sourceMapEmbed: true,
+    // },
     // Add options here
   });
 

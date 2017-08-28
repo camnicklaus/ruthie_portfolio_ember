@@ -5,11 +5,11 @@ module.exports = function(environment) {
     modulePrefix: 'ruthie-portfolio',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'router-scroll',
     // historySupportMiddleware: true,
-    // routerScroll: {
-    //   scrollElement: '#image-gallery-scroll'
-    // },
+    routerScroll: {
+      scrollElement: '#image-gallery-scroll'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -47,7 +47,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }
   }
 
   return ENV;
